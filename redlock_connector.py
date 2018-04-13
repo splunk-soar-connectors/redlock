@@ -209,7 +209,7 @@ class RedlockConnector(BaseConnector):
             container['severity'] = policy['severity']
             container['sensitivity'] = sensitivity_map.get(policy['severity'], 'amber')
             container['source_data_identifier'] = alert['id']
-            if policy['status'] in ('dismissed', 'resolved'):
+            if alert['status'] in ('dismissed', 'resolved'):
                 container['status'] = 'closed'
 
             artifact['name'] = '{} Alert'.format(policy['name'])
