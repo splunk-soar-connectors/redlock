@@ -2,11 +2,11 @@
 # RedLock
 
 Publisher: Phantom  
-Connector Version: 1\.0\.4  
+Connector Version: 1.0.6  
 Product Vendor: RedLock  
 Product Name: RedLock  
-Product Version Supported (regex): "\.\*"  
-Minimum Product Version: 3\.0\.284  
+Product Version Supported (regex): ".\*"  
+Minimum Product Version: 3.0.284  
 
 This app integrates with RedLock and ingests new alerts
 
@@ -17,7 +17,7 @@ VARIABLE | REQUIRED | TYPE | DESCRIPTION
 -------- | -------- | ---- | -----------
 **username** |  required  | string | Username
 **password** |  required  | password | Password
-**ingest\_days\_back** |  optional  | numeric | Start ingesting alerts from this many days ago
+**ingest_days_back** |  optional  | numeric | Start ingesting alerts from this many days ago
 
 ### Supported Actions  
 [test connectivity](#action-test-connectivity) - Validate the asset configuration for connectivity using supplied configuration  
@@ -44,11 +44,11 @@ Read only: **True**
 #### Action Parameters
 PARAMETER | REQUIRED | DESCRIPTION | TYPE | CONTAINS
 --------- | -------- | ----------- | ---- | --------
-**start\_time** |  optional  | Parameter Ignored in this app | numeric | 
-**end\_time** |  optional  | Parameter Ignored in this app | numeric | 
-**container\_id** |  optional  | Parameter Ignored in this app | numeric | 
-**container\_count** |  required  | Maximum number of alerts to ingest | numeric | 
-**artifact\_count** |  optional  | Parameter Ignored in this app | numeric | 
+**start_time** |  optional  | Parameter Ignored in this app | numeric | 
+**end_time** |  optional  | Parameter Ignored in this app | numeric | 
+**container_id** |  optional  | Parameter Ignored in this app | numeric | 
+**container_count** |  required  | Maximum number of alerts to ingest | numeric | 
+**artifact_count** |  optional  | Parameter Ignored in this app | numeric | 
 
 #### Action Output
 No Output
