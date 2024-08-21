@@ -15,16 +15,17 @@
 #
 #
 # Phantom App imports
+import datetime
+import json
+
 import phantom.app as phantom
-from phantom.base_connector import BaseConnector
+import requests
+from bs4 import BeautifulSoup
 from phantom.action_result import ActionResult
+from phantom.base_connector import BaseConnector
 
 # Usage of the consts file is recommended
 from redlock_consts import *
-import json
-import requests
-import datetime
-from bs4 import BeautifulSoup
 
 
 class RetVal(tuple):
@@ -304,8 +305,9 @@ class RedlockConnector(BaseConnector):
 
 if __name__ == '__main__':
 
-    import pudb
     import argparse
+
+    import pudb
 
     pudb.set_trace()
 
